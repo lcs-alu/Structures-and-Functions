@@ -21,8 +21,13 @@ import Foundation
  Type the code that you see above. Then run the playground to try it out.
  */
 // Define the function here
-
-
+func greet(person: String) {
+    print("Hello,/ (person)!")
+}
+greet(person: "Sara")
+// Prints:
+//
+//Hello, Sara
 // Now greet Sara by invoking the function
 
 
