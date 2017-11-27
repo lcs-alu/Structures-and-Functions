@@ -97,12 +97,12 @@ end.y
 
 // Re-define the distance function here
 func distance(from: Point, to: Point) -> Double {
-     distance(from: start, to: end)
+    return sqrt(pow(from.x - to.x, 2) + pow(from.y - to.y, 2))
 }
 
 
 // Invoke the new function here
-
+distance(from: start, to: end)
 
 /*:
  [Next](@next)
