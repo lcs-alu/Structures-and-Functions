@@ -32,4 +32,28 @@ import Foundation
 
 */
 
-// Begin here... 
+// Set the structure
+struct Point {
+    var x : Double = 0.0
+    var y : Double = 0.0
+}
+// Create a instance
+var cabinSite = Point(x: 6, y:1.5)
+
+// Define a struture that represents a Line
+struct Line {
+    var slope : Double = 1.0
+    var verticalIntercept : Double = 0.0
+}
+
+// Create an instance of the line
+var slopeOfExistingRoad = Slope(rise: -1, run: 2)
+var existingRoad = Line(slope: slopeOfExistingRoad, verticalIntercept: 9.5)
+
+func getSlopeOfPerpendicularLine(from givenLine: Line) -> Slope {
+
+}
+func shortestDistance(from: Point, to: Line) -> Double {
+    return sqrt(pow(from.x - to.x, 2) + pow(from.y - to.y, 2))
+}
+
